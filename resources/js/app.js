@@ -8,7 +8,11 @@ import Welcome from './Welcome';
 
 window.Vue = Vue;
 
-Vue.use(VueCurrencyInput);
+const pluginOptions = {
+    globalOptions: { currency: 'USD' },
+};
+
+Vue.use(VueCurrencyInput, pluginOptions);
 Vue.use(VueRouter);
 Vue.component('main-menu', require('./MainMenu.vue').default);
 
