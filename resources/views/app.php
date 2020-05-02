@@ -5,13 +5,19 @@
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="csrf-token" content="{{ csrf_token() }}" />
         <title>I-View Now</title>
-
         <link href="/css/app.css" rel="stylesheet" />
     </head>
-
     <body>
-    dsffdsfdsff
-        <div id="app"></div>
+       <div id="app">
+            <main-menu></main-menu>
+                <section class="section">
+                    <div class="container">
+                    <transition name="router-fade" mode="out-in">
+                        <router-view></router-view>
+                    </transition>
+                    </div>
+                </section>
+        </div>
         <script src="/js/app.js"></script>
     </body>
 </html>

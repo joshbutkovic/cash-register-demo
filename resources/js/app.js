@@ -1,12 +1,26 @@
-import 'bootstrap';
-
-import Vue from 'vue';
 import VueRouter from 'vue-router';
-import routes from './routes';
+
+import Register from './Register';
+import Reports from './Reports';
+import Welcome from './Welcome';
+
+require('./bootstrap');
+window.Vue = require('vue');
 
 Vue.use(VueRouter);
+Vue.component('main-menu', require('./MainMenu.vue').default);
+
+const routes = [
+    { path: '/', component: Welcome },
+    { path: '/register', component: Register },
+    { path: '/reports', component: Reports },
+];
+
+const router = new VueRouter({
+    mode: 'history',
+    routes,
+});
 
 new Vue({
-    el: '#app',
-    router: new VueRouter(routes),
-});
+    router,
+}).$mount('#app');

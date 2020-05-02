@@ -1,8 +1,18 @@
 // Fonts
 @import url('https://fonts.googleapis.com/css?family=Nunito');
 
-// Variables
-@import 'variables';
+// // Variables
+// @import 'variables';
 
-// Bootstrap
-@import '~bootstrap/scss/bootstrap';
+.router-fade-enter-active,
+.router-fade-leave-active {
+    transition: opacity 125ms ease-in-out;
+}
+.router-fade-enter,
+.router-fade-leave-active {
+    opacity: 0;
+}
+
+// Bulma Overrides
+
+@import 'node_modules/bulma/bulma';
