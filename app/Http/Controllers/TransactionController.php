@@ -25,21 +25,21 @@ class TransactionController extends Controller
 
         $change = $this->getChange(abs($amountDue));
 
+        $changeObj = (object) $change;
+
         // Insert Record
         $transaction = new Transaction;
-        $transaction->due = 34.44;
-        $transaction->provided = 44.44;
-        echo $change;
-        // $transaction->hundreds = $change['hundreds'];
-        // $transaction->fifties = $change['fifties'];
-        // $transaction->twenties = $change['twenties'];
-        // $transaction->fives = $change['fives'];
-        // $transaction->ones = $change['ones'];
-        // $transaction->quarters = $change['quarters'];
-        // $transaction->dimes = $change['dimes'];
-        // $transaction->nickels = $change['nickels'];
-        // $transaction->pennies = $change['pennies'];
-
+        $transaction->due = $request->due;
+        $transaction->provided = $request->provided;
+        $transaction->hundreds = isset($changeObj->hundreds) ? $changeObj->hundreds : 0;
+        $transaction->fifties = isset($changeObj->fifties) ? $changeObj->fifties : 0;
+        $transaction->twenties = isset($changeObj->twenties) ? $changeObj->twenties : 0;
+        $transaction->fives = isset($changeObj->fives) ? $changeObj->fives : 0;
+        $transaction->ones = isset($changeObj->ones) ? $changeObj->ones : 0;
+        $transaction->quarters = isset($changeObj->quarters) ? $changeObj->quarters : 0;
+        $transaction->dimes = isset($changeObj->dimes) ? $changeObj->dimes : 0;
+        $transaction->nickels = isset($changeObj->nickels) ? $changeObj->nickels : 0;
+        $transaction->pennies = isset($changeObj->pennies) ? $changeObj->pennies : 0;
         $transaction->save();
 
         return response()->json($change);
