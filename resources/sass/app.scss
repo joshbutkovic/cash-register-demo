@@ -4,6 +4,13 @@
 // // Variables
 // @import 'variables';
 
+html,
+body,
+#app {
+    font-family: 'Nunito', sans-serif;
+}
+
+// Animations
 .router-fade-enter-active,
 .router-fade-leave-active {
     transition: opacity 100ms ease-in-out;
@@ -13,6 +20,12 @@
     opacity: 0;
 }
 
+// Buttons
+.button {
+    &:hover {
+        background: fade(inherit, 50%);
+    }
+}
 // Bulma Overrides
 
 @import 'node_modules/bulma/bulma';

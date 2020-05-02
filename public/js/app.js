@@ -2004,8 +2004,6 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
 //
 //
 //
-//
-//
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: 'Register',
   data: function data() {
@@ -2013,7 +2011,7 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
       msg: 'hello',
       due: 100.0,
       provided: 200.0,
-      change: 0.0
+      change: {}
     };
   },
   methods: {
@@ -2045,8 +2043,7 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
                 throw new Error('transaction failed');
 
               case 7:
-                // this.change = res.data;
-                console.log(res.data);
+                _this.change = res.data;
                 _context.next = 13;
                 break;
 
@@ -2062,6 +2059,11 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
           }
         }, _callee, null, [[1, 10]]);
       }))();
+    },
+    clearFields: function clearFields() {
+      this.due = 0.0;
+      this.provided = 0.0;
+      change = {};
     }
   }
 });
@@ -2153,7 +2155,7 @@ exports = module.exports = __webpack_require__(/*! ../../node_modules/css-loader
 
 
 // module
-exports.push([module.i, "form.card[data-v-027133c1] {\n  padding: 1.5rem;\n}\nform.card .currency[data-v-027133c1] {\n  font-size: 1rem;\n  padding: 0.5rem;\n}", ""]);
+exports.push([module.i, "form[data-v-027133c1] {\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  padding: 0 1.5rem;\n}\nform .currency[data-v-027133c1],\nform .change[data-v-027133c1] {\n  font-size: 1rem;\n  padding: 0.5rem;\n}\nform .field.is-grouped[data-v-027133c1] {\n  margin-top: 1rem;\n}", ""]);
 
 // exports
 
@@ -4714,72 +4716,84 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div", { staticClass: "columns" }, [
+  return _c("div", { staticClass: "columns is-vcentered" }, [
     _c("div", { staticClass: "column is-6 is-offset-3" }, [
-      _c(
-        "form",
-        { staticClass: "card", on: { submit: _vm.createTransaction } },
-        [
-          _c("div", { staticClass: "title" }, [_vm._v("Enter Transaction")]),
+      _c("form", { on: { submit: _vm.createTransaction } }, [
+        _c("div", { staticClass: "title" }, [_vm._v("Enter Transaction")]),
+        _vm._v(" "),
+        _c("div", { staticClass: "field" }, [
+          _c("label", { staticClass: "label" }, [_vm._v("Amount Due ($USD)")]),
           _vm._v(" "),
-          _c("div", { staticClass: "field" }, [
-            _c("label", { staticClass: "label" }, [
-              _vm._v("Amount Due ($USD)")
-            ]),
-            _vm._v(" "),
-            _c(
-              "div",
-              { staticClass: "control has-icons-left has-icons-right" },
-              [
-                _c("currency-input", {
-                  staticClass: "currency",
-                  model: {
-                    value: _vm.due,
-                    callback: function($$v) {
-                      _vm.due = $$v
-                    },
-                    expression: "due"
-                  }
-                })
-              ],
-              1
-            )
+          _c(
+            "div",
+            { staticClass: "control has-icons-left has-icons-right" },
+            [
+              _c("currency-input", {
+                staticClass: "currency",
+                model: {
+                  value: _vm.due,
+                  callback: function($$v) {
+                    _vm.due = $$v
+                  },
+                  expression: "due"
+                }
+              })
+            ],
+            1
+          )
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "field" }, [
+          _c("label", { staticClass: "label" }, [
+            _vm._v("Amount Provided ($USD)")
           ]),
           _vm._v(" "),
-          _c("div", { staticClass: "field" }, [
-            _c("label", { staticClass: "label" }, [
-              _vm._v("Amount Provided ($USD)")
-            ]),
-            _vm._v(" "),
-            _c(
-              "div",
-              { staticClass: "control has-icons-left has-icons-right" },
-              [
-                _c("currency-input", {
-                  staticClass: "currency",
-                  model: {
-                    value: _vm.provided,
-                    callback: function($$v) {
-                      _vm.provided = $$v
-                    },
-                    expression: "provided"
-                  }
-                })
-              ],
-              1
-            )
-          ]),
+          _c(
+            "div",
+            { staticClass: "control has-icons-left has-icons-right" },
+            [
+              _c("currency-input", {
+                staticClass: "currency",
+                model: {
+                  value: _vm.provided,
+                  callback: function($$v) {
+                    _vm.provided = $$v
+                  },
+                  expression: "provided"
+                }
+              })
+            ],
+            1
+          )
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "field is-grouped" }, [
+          _vm._m(0),
           _vm._v(" "),
-          _vm._m(0)
-        ]
-      ),
-      _vm._v(" "),
-      _c("div", { staticClass: "columns" }, [
-        _c("div", { staticClass: "column" }, [
-          _c("h4", [_vm._v("$" + _vm._s(_vm.change))])
+          _c("div", { staticClass: "control" }, [
+            _c(
+              "button",
+              {
+                staticClass: "button is-link is-light",
+                on: { click: _vm.clearFields }
+              },
+              [_vm._v("Clear")]
+            )
+          ])
         ])
       ])
-    ])
+    ]),
+    _vm._v(" "),
+    _c(
+      "div",
+      { staticClass: "column" },
+      _vm._l(_vm.change, function(item, index) {
+        return _c("p", { key: index, staticClass: "change" }, [
+          _vm._v(_vm._s(index) + ": " + _vm._s(item))
+        ])
+      }),
+      0
+    )
   ])
 }
 var staticRenderFns = [
@@ -4787,10 +4801,8 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "field is-grouped" }, [
-      _c("div", { staticClass: "control" }, [
-        _c("button", { staticClass: "button is-link" }, [_vm._v("Enter Sale")])
-      ])
+    return _c("div", { staticClass: "control" }, [
+      _c("button", { staticClass: "button is-link" }, [_vm._v("Enter Sale")])
     ])
   }
 ]

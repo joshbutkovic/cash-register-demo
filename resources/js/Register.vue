@@ -1,7 +1,7 @@
 <template>
-    <div class="columns">
+    <div class="columns is-vcentered">
         <div class="column is-6 is-offset-3">
-            <form class="card" @submit="createTransaction">
+            <form @submit="createTransaction">
                 <div class="title">Enter Transaction</div>
                 <div class="field">
                     <label class="label">Amount Due ($USD)</label>
@@ -21,16 +21,14 @@
                     <div class="control">
                         <button class="button is-link">Enter Sale</button>
                     </div>
-                    <!-- <div class="control">
-                        <button class="button is-link is-light">Clear</button>
-                    </div> -->
+                    <div class="control">
+                        <button @click="clearFields" class="button is-link is-light">Clear</button>
+                    </div>
                 </div>
             </form>
-            <div class="columns">
-                <div class="column">
-                    <h4>${{ change }}</h4>
-                </div>
-            </div>
+        </div>
+        <div class="column">
+            <p class="change" v-for="(item, index) in change" v-bind:key="index">{{ index }}: {{ item }}</p>
         </div>
     </div>
 </template>
@@ -43,7 +41,7 @@ export default {
             msg: 'hello',
             due: 100.0,
             provided: 200.0,
-            change: 0.0,
+            change: {},
         };
     },
     methods: {
@@ -54,25 +52,35 @@ export default {
                     due: this.due,
                     provided: this.provided,
                 });
-                if (!res) {
-                    throw new Error('transaction failed');
-                }
-                // this.change = res.data;
-                console.log(res.data);
+
+                if (!res) throw new Error('transaction failed');
+                this.change = res.data;
             } catch (error) {
                 throw new Error(`transaction failed: ${error}`);
             }
+        },
+        clearFields() {
+            this.due = 0.0;
+            this.provided = 0.0;
+            change = {};
         },
     },
 };
 </script>
 
 <style scoped lang="scss">
-form.card {
-    padding: 1.5rem;
-    .currency {
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 1.5rem;
+    .currency,
+    .change {
         font-size: 1rem;
         padding: 0.5rem;
+    }
+    .field.is-grouped {
+        margin-top: 1rem;
     }
 }
 </style>
