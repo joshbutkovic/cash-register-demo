@@ -1,12 +1,14 @@
+import './bootstrap';
+import Vue from 'vue';
 import VueRouter from 'vue-router';
-
+import VueCurrencyInput from 'vue-currency-input';
 import Register from './Register';
 import Reports from './Reports';
 import Welcome from './Welcome';
 
-require('./bootstrap');
-window.Vue = require('vue');
+window.Vue = Vue;
 
+Vue.use(VueCurrencyInput);
 Vue.use(VueRouter);
 Vue.component('main-menu', require('./MainMenu.vue').default);
 

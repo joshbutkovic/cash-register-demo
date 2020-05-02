@@ -1959,11 +1959,42 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: 'Register',
   data: function data() {
     return {
-      msg: 'hello'
+      msg: 'hello',
+      amount: ''
     };
   }
 });
@@ -2037,6 +2068,25 @@ exports = module.exports = __webpack_require__(/*! ../../node_modules/css-loader
 
 // module
 exports.push([module.i, ".navbar[data-v-3e2a0554] {\n  background-color: #141414;\n  min-height: 3.4rem;\n}\n.navbar .navbar-brand a.navbar-item.navbar-logo[data-v-3e2a0554] {\n  font-size: 1.4rem;\n  background: #141414;\n}\n.navbar .navbar-brand a.navbar-item.navbar-logo[data-v-3e2a0554]:hover {\n  transition: none;\n}\n.navbar a.navbar-item[data-v-3e2a0554] {\n  color: #ededed;\n  transition: all 250ms ease-in-out;\n  font-size: 15px;\n  padding: 0 18px;\n  margin: 0 4px;\n  align-items: center;\n}\n.navbar a.navbar-item[data-v-3e2a0554]:after {\n  content: \"\";\n  position: absolute;\n  bottom: 0;\n  left: 0;\n  right: 0;\n  width: 100%;\n  height: 4px;\n  transform: scaleX(0);\n  background-color: green;\n  transition: transform 200ms;\n  top: 34px;\n}\n.navbar a.navbar-item[data-v-3e2a0554]:hover:not(.navbar-logo), .navbar a.navbar-item[data-v-3e2a0554]:hover:not(.navbar-logo), .navbar a.navbar-item[data-v-3e2a0554]:active:not(.navbar-logo), .navbar a.navbar-item.is-active[data-v-3e2a0554]:not(.navbar-logo) {\n  background-color: #141414;\n  color: #fff;\n}\n.navbar a.navbar-item[data-v-3e2a0554]:hover:not(.navbar-logo):after, .navbar a.navbar-item[data-v-3e2a0554]:hover:not(.navbar-logo):after, .navbar a.navbar-item[data-v-3e2a0554]:active:not(.navbar-logo):after, .navbar a.navbar-item.is-active[data-v-3e2a0554]:not(.navbar-logo):after {\n  transform: scaleX(1);\n}\n.navbar a.navbar-item[data-v-3e2a0554]:focus, .navbar a.navbar-item[data-v-3e2a0554]:focus-within {\n  background-color: #141414;\n  transition: none;\n}\n.navbar .navbar-end[data-v-3e2a0554] {\n  align-items: center;\n}\n.navbar .svg-inline--fa.fa-w-16[data-v-3e2a0554] {\n  font-size: 1.125rem;\n}", ""]);
+
+// exports
+
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/index.js?!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/Register.vue?vue&type=style&index=0&id=027133c1&scoped=true&style=scss&lang=css&":
+/*!**************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader??ref--6-1!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src??ref--6-2!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/Register.vue?vue&type=style&index=0&id=027133c1&scoped=true&style=scss&lang=css& ***!
+  \**************************************************************************************************************************************************************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(/*! ../../node_modules/css-loader/lib/css-base.js */ "./node_modules/css-loader/lib/css-base.js")(false);
+// imports
+
+
+// module
+exports.push([module.i, "\nform.card[data-v-027133c1] {\n    padding: 1rem;\n}\n", ""]);
 
 // exports
 
@@ -2532,6 +2582,36 @@ process.umask = function() { return 0; };
 
 
 var content = __webpack_require__(/*! !../../node_modules/css-loader!../../node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../node_modules/postcss-loader/src??ref--7-2!../../node_modules/sass-loader/dist/cjs.js??ref--7-3!../../node_modules/vue-loader/lib??vue-loader-options!./MainMenu.vue?vue&type=style&index=0&id=3e2a0554&scoped=true&lang=scss& */ "./node_modules/css-loader/index.js!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/MainMenu.vue?vue&type=style&index=0&id=3e2a0554&scoped=true&lang=scss&");
+
+if(typeof content === 'string') content = [[module.i, content, '']];
+
+var transform;
+var insertInto;
+
+
+
+var options = {"hmr":true}
+
+options.transform = transform
+options.insertInto = undefined;
+
+var update = __webpack_require__(/*! ../../node_modules/style-loader/lib/addStyles.js */ "./node_modules/style-loader/lib/addStyles.js")(content, options);
+
+if(content.locals) module.exports = content.locals;
+
+if(false) {}
+
+/***/ }),
+
+/***/ "./node_modules/style-loader/index.js!./node_modules/css-loader/index.js?!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/Register.vue?vue&type=style&index=0&id=027133c1&scoped=true&style=scss&lang=css&":
+/*!******************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/style-loader!./node_modules/css-loader??ref--6-1!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src??ref--6-2!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/Register.vue?vue&type=style&index=0&id=027133c1&scoped=true&style=scss&lang=css& ***!
+  \******************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+
+var content = __webpack_require__(/*! !../../node_modules/css-loader??ref--6-1!../../node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../node_modules/postcss-loader/src??ref--6-2!../../node_modules/vue-loader/lib??vue-loader-options!./Register.vue?vue&type=style&index=0&id=027133c1&scoped=true&style=scss&lang=css& */ "./node_modules/css-loader/index.js?!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/Register.vue?vue&type=style&index=0&id=027133c1&scoped=true&style=scss&lang=css&");
 
 if(typeof content === 'string') content = [[module.i, content, '']];
 
@@ -3137,6 +3217,618 @@ exports.clearImmediate = (typeof self !== "undefined" && self.clearImmediate) ||
 
 /***/ }),
 
+/***/ "./node_modules/vue-currency-input/dist/vue-currency-input.esm.js":
+/*!************************************************************************!*\
+  !*** ./node_modules/vue-currency-input/dist/vue-currency-input.esm.js ***!
+  \************************************************************************/
+/*! exports provided: default, CurrencyDirective, CurrencyInput, parseCurrency, setValue */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "CurrencyDirective", function() { return directive; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "CurrencyInput", function() { return component; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "parseCurrency", function() { return parseCurrency; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "setValue", function() { return setValue; });
+/* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.common.js");
+/* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(vue__WEBPACK_IMPORTED_MODULE_0__);
+/**
+ * Vue Currency Input 1.18.3
+ * (c) 2020 Matthias Stiller
+ * @license MIT
+ */
+
+
+var formatToParts = function (number, numberFormat) {
+  var parts = numberFormat.formatToParts(number);
+  var types = parts.map(function (p) { return p.type; });
+  var digits = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9].map(function (i) { return i.toLocaleString(numberFormat.resolvedOptions().locale); });
+  var prefix = parts.slice(0, types.indexOf('integer')).map(function (p) { return p.value; }).join('');
+  var suffix = parts.slice(Math.max(types.lastIndexOf('integer'), types.indexOf('fraction')) + 1).map(function (p) { return p.value; }).join('');
+  var groupingSymbol = types.indexOf('group') !== -1 ? parts[types.indexOf('group')].value : undefined;
+  var decimalSymbol = types.indexOf('decimal') !== -1 ? parts[types.indexOf('decimal')].value : undefined;
+  var minusSymbol = types.indexOf('minusSign') !== -1 ? parts[types.indexOf('minusSign')].value : undefined;
+  return {
+    digits: digits,
+    prefix: prefix,
+    suffix: suffix,
+    groupingSymbol: groupingSymbol,
+    decimalSymbol: decimalSymbol,
+    minusSymbol: minusSymbol
+  }
+};
+function createCurrencyFormat (ref) {
+  var locale = ref.locale;
+  var currency = ref.currency;
+  var precision = ref.precision;
+  var autoDecimalMode = ref.autoDecimalMode;
+  var valueAsInteger = ref.valueAsInteger;
+  var options = typeof currency === 'string' ? { currency: currency, style: 'currency' } : { minimumFractionDigits: 1 };
+  var numberFormat = new Intl.NumberFormat(locale, options);
+  var ref$1 = formatToParts(-1, numberFormat);
+  var minusSymbol = ref$1.minusSymbol;
+  var negativePrefix = ref$1.prefix;
+  var currencyFormat = Object.assign({}, formatToParts(123456, numberFormat),
+    {minusSymbol: minusSymbol,
+    negativePrefix: negativePrefix});
+  var minimumFractionDigits = 2;
+  var maximumFractionDigits = 2;
+  if (currencyFormat.decimalSymbol === undefined) {
+    minimumFractionDigits = maximumFractionDigits = 0;
+  } else if (typeof precision === 'number') {
+    minimumFractionDigits = maximumFractionDigits = precision;
+  } else if (typeof precision === 'object' && !autoDecimalMode && !valueAsInteger) {
+    minimumFractionDigits = precision.min || 0;
+    maximumFractionDigits = precision.max !== undefined ? precision.max : 20;
+  } else if (typeof currency === 'string') {
+    minimumFractionDigits = numberFormat.resolvedOptions().minimumFractionDigits;
+    maximumFractionDigits = numberFormat.resolvedOptions().maximumFractionDigits;
+  }
+  if (currency != null && typeof currency === 'object') {
+    currencyFormat.prefix = currency.prefix || '';
+    currencyFormat.negativePrefix = "" + (currencyFormat.minusSymbol) + (currency.prefix || '');
+    currencyFormat.suffix = currency.suffix || '';
+  }
+  return Object.assign({}, currencyFormat, {minimumFractionDigits: minimumFractionDigits, maximumFractionDigits: maximumFractionDigits})
+}
+
+var toInteger = function (number, valueAsInteger, fractionDigits) {
+  return valueAsInteger && number != null ? Number(number.toFixed(fractionDigits).split('.').join('')) : number
+};
+var toFloat = function (number, valueAsInteger, fractionDigits) {
+  return valueAsInteger && number != null ? number / Math.pow(10, fractionDigits) : number
+};
+
+var removeLeadingZeros = function (str) { return str.replace(/^0+(0$|[^0])/, '$1'); };
+var onlyDigits = function (str, digits) { return normalizeDigits(str, digits).replace(/\D+/g, ''); };
+var count = function (str, search) { return (str.match(new RegExp(("\\" + search), 'g')) || []).length; };
+var endsWith = function (str, search) {
+  return str.substring(str.length - search.length, str.length) === search
+};
+var startsWith = function (str, search) {
+  return str.substring(0, search.length) === search
+};
+var insertCurrencySymbol = function (value, currencyFormat, negative, hideCurrencySymbol) {
+  var prefix = currencyFormat.prefix;
+  var negativePrefix = currencyFormat.negativePrefix;
+  var suffix = currencyFormat.suffix;
+  if (hideCurrencySymbol) {
+    prefix = suffix = '';
+    negativePrefix = currencyFormat.minusSymbol;
+  }
+  return ("" + (negative ? negativePrefix : prefix) + value + suffix)
+};
+var stripCurrencySymbol = function (str, ref) {
+  var prefix = ref.prefix;
+  var suffix = ref.suffix;
+  if (prefix) {
+    str = str.replace(prefix, '').replace(prefix.trim(), '');
+  }
+  if (suffix) {
+    str = str.replace(suffix, '').replace(suffix.trim(), '');
+  }
+  return str.trim()
+};
+var normalizeMinusSymbol = function (str) {
+  return str.replace(new RegExp(("^" + (['−', '-', '‐'].join('|'))), 'g'), '-')
+};
+var isNegative = function (str) { return normalizeMinusSymbol(str).charAt(0) === '-'; };
+var isNumber = function (str) { return normalizeMinusSymbol(str).match(new RegExp("^-?\\d+(\\.\\d+)?$")); };
+var normalizeDigits = function (str, digits) {
+  digits.forEach(function (digit, index) {
+    str = str.replace(new RegExp(digit, 'g'), index);
+  });
+  return str
+};
+
+function parse (str, currencyFormat, valueAsInteger) {
+  if ( valueAsInteger === void 0 ) valueAsInteger = false;
+  if (typeof str === 'string') {
+    str = normalizeDigits(str, currencyFormat.digits);
+    var value = stripCurrencySymbol(str, currencyFormat);
+    var numberParts = value.split(currencyFormat.decimalSymbol);
+    if (numberParts.length > 2) {
+      return null
+    }
+    var integer = numberParts[0].replace(new RegExp(("\\" + (currencyFormat.groupingSymbol)), 'g'), '');
+    if (!isNumber(integer)) {
+      return null
+    }
+    var number = integer;
+    if (numberParts.length === 2) {
+      var fraction = numberParts[1];
+      if (fraction.length && !fraction.match(/^\d+$/g)) {
+        return null
+      }
+      number += "." + fraction;
+    }
+    return toInteger(Number(normalizeMinusSymbol(number)), valueAsInteger, currencyFormat.minimumFractionDigits)
+  }
+  return null
+}
+
+function dispatchEvent (el, eventName, data) {
+  var event = document.createEvent('CustomEvent');
+  event.initCustomEvent(eventName, true, true, data);
+  el.dispatchEvent(event);
+}
+
+var DEFAULT_OPTIONS = {
+  locale: undefined,
+  currency: 'EUR',
+  valueAsInteger: false,
+  distractionFree: true,
+  precision: undefined,
+  autoDecimalMode: false,
+  valueRange: undefined,
+  allowNegative: true
+};
+var parseCurrency = function (formattedValue, options) { return parse(formattedValue, createCurrencyFormat(Object.assign({}, DEFAULT_OPTIONS, options)), options.valueAsInteger); };
+var setValue = function (el, value) { return dispatchEvent(el, 'format', { value: value }); };
+
+var setCaretPosition = function (el, position) { return el.setSelectionRange(position, position); };
+var getCaretPositionAfterFormat = function (newValue, inputtedValue, caretPosition, currencyFormat, options) {
+  var prefix = currencyFormat.prefix;
+  var suffix = currencyFormat.suffix;
+  var decimalSymbol = currencyFormat.decimalSymbol;
+  var maximumFractionDigits = currencyFormat.maximumFractionDigits;
+  var groupingSymbol = currencyFormat.groupingSymbol;
+  var digits = currencyFormat.digits;
+  var decimalSymbolPosition = inputtedValue.indexOf(decimalSymbol) + 1;
+  var caretPositionFromLeft = inputtedValue.length - caretPosition;
+  if (Math.abs(newValue.length - inputtedValue.length) > 1 && caretPosition <= decimalSymbolPosition) {
+    return newValue.indexOf(decimalSymbol) + 1
+  } else if (newValue.substr(caretPosition, 1) === groupingSymbol && count(newValue, groupingSymbol) === count(inputtedValue, groupingSymbol) + 1) {
+    return newValue.length - caretPositionFromLeft - 1
+  } else {
+    if (!options.autoDecimalMode && decimalSymbolPosition !== 0 && caretPosition > decimalSymbolPosition) {
+      if (onlyDigits(inputtedValue.substr(decimalSymbolPosition), digits).length - 1 === maximumFractionDigits) {
+        caretPositionFromLeft -= 1;
+      }
+    }
+    return options.distractionFree.hideCurrencySymbol
+      ? newValue.length - caretPositionFromLeft
+      : Math.max(newValue.length - Math.max(caretPositionFromLeft, suffix.length), prefix.length === 0 ? 0 : prefix.length + 1)
+  }
+};
+var getDistractionFreeCaretPosition = function (currencyFormat, options, value, caretPosition) {
+  var result = caretPosition;
+  if (options.distractionFree.hideCurrencySymbol) {
+    result -= currencyFormat.prefix.length;
+  }
+  if (options.distractionFree.hideGroupingSymbol) {
+    result -= count(value.substring(0, caretPosition), currencyFormat.groupingSymbol);
+  }
+  return Math.max(0, result)
+};
+
+var isValidInteger = function (integer, groupingSymbol) { return integer.match(new RegExp(("^(0|[1-9]\\d{0,2}(\\" + groupingSymbol + "?\\d{3})*)$"))); };
+var isFractionIncomplete = function (value, ref) {
+  var digits = ref.digits;
+  var decimalSymbol = ref.decimalSymbol;
+  var groupingSymbol = ref.groupingSymbol;
+  var numberParts = value.split(decimalSymbol);
+  return endsWith(value, decimalSymbol) && numberParts.length === 2 && isValidInteger(normalizeDigits(numberParts[0], digits), groupingSymbol)
+};
+var checkIncompleteValue = function (value, negative, previousConformedValue, currencyFormat, hideCurrencySymbol) {
+  var digits = currencyFormat.digits;
+  var negativePrefix = currencyFormat.negativePrefix;
+  var decimalSymbol = currencyFormat.decimalSymbol;
+  var maximumFractionDigits = currencyFormat.maximumFractionDigits;
+  if (value === '' && negative && previousConformedValue !== (hideCurrencySymbol ? currencyFormat.minusSymbol : negativePrefix)) {
+    return insertCurrencySymbol('', currencyFormat, negative, hideCurrencySymbol)
+  } else if (maximumFractionDigits > 0) {
+    if (isFractionIncomplete(value, currencyFormat)) {
+      return insertCurrencySymbol(value, currencyFormat, negative, hideCurrencySymbol)
+    } else if (startsWith(value, decimalSymbol)) {
+      return insertCurrencySymbol(("" + (digits[0]) + decimalSymbol + ((onlyDigits(value.substr(1), digits).substr(0, maximumFractionDigits)))), currencyFormat, negative, hideCurrencySymbol)
+    }
+  }
+  return null
+};
+var getAutoDecimalModeConformedValue = function (str, ref, allowNegative) {
+  var minimumFractionDigits = ref.minimumFractionDigits;
+  var digits = ref.digits;
+  if (str === '') {
+    return { conformedValue: '' }
+  } else {
+    var negative = isNegative(str) && allowNegative;
+    var conformedValue = (allowNegative && str === '-')
+      ? -0
+      : Number(("" + (negative ? '-' : '') + (removeLeadingZeros(onlyDigits(str, digits))))) / Math.pow(10, minimumFractionDigits);
+    return {
+      conformedValue: conformedValue,
+      fractionDigits: conformedValue.toFixed(minimumFractionDigits).slice(-minimumFractionDigits)
+    }
+  }
+};
+function conformToMask (str, currencyFormat, previousConformedValue, hideCurrencySymbol, autoDecimalMode, allowNegative) {
+  if ( previousConformedValue === void 0 ) previousConformedValue = '';
+  if (typeof str === 'string') {
+    var value = stripCurrencySymbol(str, currencyFormat);
+    if (currencyFormat.minimumFractionDigits > 0 && autoDecimalMode) {
+      return getAutoDecimalModeConformedValue(value, currencyFormat, allowNegative)
+    }
+    var negative = isNegative(value);
+    if (negative) {
+      value = value.substring(1);
+      negative &= allowNegative;
+    }
+    var incompleteValue = checkIncompleteValue(value, negative, previousConformedValue, currencyFormat, hideCurrencySymbol);
+    if (incompleteValue != null) {
+      return { conformedValue: incompleteValue }
+    }
+    var ref = value.split(currencyFormat.decimalSymbol);
+    var integer = ref[0];
+    var fraction = ref.slice(1);
+    var integerDigits = removeLeadingZeros(onlyDigits(integer, currencyFormat.digits));
+    var fractionDigits = onlyDigits(fraction.join(''), currencyFormat.digits).substr(0, currencyFormat.maximumFractionDigits);
+    var invalidFraction = fraction.length > 0 && fractionDigits.length === 0;
+    var invalidNegativeValue = integerDigits === '' && negative && (previousConformedValue === str.slice(0, -1) || previousConformedValue !== currencyFormat.negativePrefix);
+    if (invalidFraction || invalidNegativeValue) {
+      return { conformedValue: previousConformedValue }
+    } else if (isNumber(integerDigits)) {
+      return {
+        conformedValue: Number(("" + (negative ? '-' : '') + integerDigits + "." + fractionDigits)),
+        fractionDigits: fractionDigits
+      }
+    } else {
+      return { conformedValue: '' }
+    }
+  }
+  return { conformedValue: previousConformedValue }
+}
+
+var equal = function (a, b) {
+  if (a === b) {
+    return true
+  }
+  if (!a || !b || typeof a !== 'object' || typeof b !== 'object') {
+    return false
+  }
+  var keys = Object.keys(a);
+  if (keys.length !== Object.keys(b).length) {
+    return false
+  }
+  if (!keys.every(Object.prototype.hasOwnProperty.bind(b))) {
+    return false
+  }
+  return keys.every(function (key) { return equal(a[key], b[key]); })
+};
+
+var init = function (el, optionsFromBinding, ref) {
+  var $CI_DEFAULT_OPTIONS = ref.$CI_DEFAULT_OPTIONS;
+  var inputElement = el.tagName.toLowerCase() === 'input' ? el : el.querySelector('input');
+  if (!inputElement) {
+    throw new Error('No input element found')
+  }
+  var options = Object.assign({}, ($CI_DEFAULT_OPTIONS || DEFAULT_OPTIONS), optionsFromBinding);
+  var distractionFree = options.distractionFree;
+  var autoDecimalMode = options.autoDecimalMode;
+  if (typeof distractionFree === 'boolean') {
+    options.distractionFree = {
+      hideCurrencySymbol: distractionFree,
+      hideNegligibleDecimalDigits: distractionFree,
+      hideGroupingSymbol: distractionFree
+    };
+  }
+  if (autoDecimalMode) {
+    options.distractionFree.hideNegligibleDecimalDigits = false;
+    inputElement.setAttribute('inputmode', 'numeric');
+  } else {
+    inputElement.setAttribute('inputmode', 'decimal');
+  }
+  var currencyFormat = createCurrencyFormat(options);
+  inputElement.$ci = Object.assign({}, inputElement.$ci || {},
+    {options: options,
+    currencyFormat: currencyFormat});
+  return inputElement
+};
+var validateValueRange = function (value, valueRange) {
+  if (valueRange) {
+    var min = valueRange.min;
+    var max = valueRange.max;
+    if (min !== undefined && value < min) {
+      value = min;
+    }
+    if (max !== undefined && value > max) {
+      value = max;
+    }
+  }
+  return value
+};
+var applyFixedFractionFormat = function (el, value, forcedChange) {
+  var ref = el.$ci.options;
+  var valueRange = ref.valueRange;
+  var locale = ref.locale;
+  var valueAsInteger = ref.valueAsInteger;
+  var ref$1 = el.$ci.currencyFormat;
+  var maximumFractionDigits = ref$1.maximumFractionDigits;
+  var minimumFractionDigits = ref$1.minimumFractionDigits;
+  if (value != null) {
+    value = validateValueRange(value, valueRange);
+    value = new Intl.NumberFormat(locale, { minimumFractionDigits: minimumFractionDigits, maximumFractionDigits: maximumFractionDigits }).format(value);
+  }
+  format(el, value);
+  if (forcedChange) {
+    dispatchEvent(el, 'change', { numberValue: toInteger(el.$ci.numberValue, valueAsInteger, maximumFractionDigits) });
+  }
+};
+var updateInputValue = function (el, value, hideNegligibleDecimalDigits) {
+  if (value != null) {
+    var ref = el.$ci;
+    var focus = ref.focus;
+    var ref_options = ref.options;
+    var allowNegative = ref_options.allowNegative;
+    var autoDecimalMode = ref_options.autoDecimalMode;
+    var distractionFree = ref_options.distractionFree;
+    var locale = ref_options.locale;
+    var currencyFormat = ref.currencyFormat;
+    var previousConformedValue = ref.previousConformedValue;
+    var hideCurrencySymbol = focus && distractionFree.hideCurrencySymbol;
+    var ref$1 = conformToMask(value, currencyFormat, previousConformedValue, hideCurrencySymbol, autoDecimalMode, allowNegative);
+    var conformedValue = ref$1.conformedValue;
+    var fractionDigits = ref$1.fractionDigits;
+    if (typeof conformedValue === 'number') {
+      var maximumFractionDigits = currencyFormat.maximumFractionDigits;
+      var minimumFractionDigits = currencyFormat.minimumFractionDigits;
+      if (focus) {
+        minimumFractionDigits = maximumFractionDigits;
+      }
+      minimumFractionDigits = hideNegligibleDecimalDigits
+        ? fractionDigits.replace(/0+$/, '').length
+        : Math.min(minimumFractionDigits, fractionDigits.length);
+      var formattedValue = new Intl.NumberFormat(locale, {
+        useGrouping: !(focus && distractionFree.hideGroupingSymbol),
+        minimumFractionDigits: minimumFractionDigits,
+        maximumFractionDigits: maximumFractionDigits
+      }).format(Math.abs(conformedValue));
+      var isNegativeZero = conformedValue === 0 && (1 / conformedValue < 0);
+      el.value = insertCurrencySymbol(formattedValue, currencyFormat, isNegativeZero || conformedValue < 0, hideCurrencySymbol);
+      el.$ci.numberValue = conformedValue;
+    } else {
+      el.value = conformedValue;
+      el.$ci.numberValue = parse(el.value, currencyFormat);
+    }
+  } else {
+    el.value = el.$ci.numberValue = null;
+  }
+  el.$ci.previousConformedValue = el.value;
+};
+var format = function (el, value, hideNegligibleDecimalDigits) {
+  if ( hideNegligibleDecimalDigits === void 0 ) hideNegligibleDecimalDigits = false;
+  updateInputValue(el, value, hideNegligibleDecimalDigits);
+  var ref = el.$ci;
+  var numberValue = ref.numberValue;
+  var currencyFormat = ref.currencyFormat;
+  var options = ref.options;
+  numberValue = toInteger(numberValue, options.valueAsInteger, currencyFormat.maximumFractionDigits);
+  dispatchEvent(el, 'input', { numberValue: numberValue });
+};
+var addEventListener = function (el) {
+  el.addEventListener('input', function (e) {
+    if (!e.detail) {
+      var value = el.value;
+      var selectionStart = el.selectionStart;
+      var el_$ci = el.$ci;
+      var currencyFormat = el_$ci.currencyFormat;
+      var options = el_$ci.options;
+      format(el, value);
+      if (el.$ci.focus) {
+        setCaretPosition(el, getCaretPositionAfterFormat(el.value, value, selectionStart, currencyFormat, options));
+      }
+    }
+  }, { capture: true });
+  el.addEventListener('format', function (e) {
+    var ref = el.$ci;
+    var currencyFormat = ref.currencyFormat;
+    var options = ref.options;
+    var numberValue = ref.numberValue;
+    var value = toFloat(e.detail.value, options.valueAsInteger, currencyFormat.maximumFractionDigits);
+    if (value !== numberValue) {
+      applyFixedFractionFormat(el, value);
+    }
+  });
+  el.addEventListener('focus', function () {
+    el.$ci.oldValue = el.$ci.numberValue;
+    el.$ci.focus = true;
+    var ref = el.$ci.options.distractionFree;
+    var hideCurrencySymbol = ref.hideCurrencySymbol;
+    var hideGroupingSymbol = ref.hideGroupingSymbol;
+    var hideNegligibleDecimalDigits = ref.hideNegligibleDecimalDigits;
+    if (hideCurrencySymbol || hideGroupingSymbol || hideNegligibleDecimalDigits) {
+      setTimeout(function () {
+        var value = el.value;
+        var selectionStart = el.selectionStart;
+        var selectionEnd = el.selectionEnd;
+        format(el, el.value, hideNegligibleDecimalDigits);
+        if (Math.abs(selectionStart - selectionEnd) > 0) {
+          el.setSelectionRange(0, el.value.length);
+        } else {
+          setCaretPosition(el, getDistractionFreeCaretPosition(el.$ci.currencyFormat, el.$ci.options, value, selectionStart));
+        }
+      });
+    }
+  });
+  el.addEventListener('blur', function () {
+    el.$ci.focus = false;
+    applyFixedFractionFormat(el, el.$ci.numberValue, el.$ci.oldValue !== el.$ci.numberValue);
+  });
+};
+var directive = {
+  bind: function bind (el, ref, ref$1) {
+    var options = ref.value;
+    var context = ref$1.context;
+    var inputElement = init(el, options, context);
+    vue__WEBPACK_IMPORTED_MODULE_0___default.a.nextTick(function () {
+      var value = inputElement.value;
+      var inputElement_$ci = inputElement.$ci;
+      var currencyFormat = inputElement_$ci.currencyFormat;
+      var options = inputElement_$ci.options;
+      if (value) {
+        applyFixedFractionFormat(inputElement, toFloat(parse(value, currencyFormat), options.valueAsInteger, currencyFormat.maximumFractionDigits));
+      }
+    });
+    addEventListener(inputElement);
+  },
+  componentUpdated: function componentUpdated (el, ref, ref$1) {
+    var value = ref.value;
+    var oldValue = ref.oldValue;
+    var context = ref$1.context;
+    if (!equal(value, oldValue)) {
+      var inputElement = init(el, value, context);
+      applyFixedFractionFormat(inputElement, inputElement.$ci.numberValue, value.valueAsInteger !== oldValue.valueAsInteger);
+    }
+  }
+};
+
+var component = {
+  render: function render (h) {
+    var this$1 = this;
+    return h('input', {
+      domProps: {
+        value: this.formattedValue
+      },
+      directives: [{
+        name: 'currency',
+        value: this.options
+      }],
+      on: Object.assign({}, this.$listeners,
+        {change: function (e) {
+          if (e.detail) {
+            this$1.$emit('change', e.detail.numberValue);
+          }
+          this$1.formattedValue = this$1.$el.value;
+        },
+        input: function (e) {
+          if (e.detail && this$1.value !== e.detail.numberValue) {
+            this$1.$emit('input', e.detail.numberValue);
+          }
+          this$1.formattedValue = this$1.$el.value;
+        }})
+    })
+  },
+  directives: {
+    currency: directive
+  },
+  name: 'CurrencyInput',
+  props: {
+    value: {
+      type: Number,
+      default: null
+    },
+    locale: {
+      type: String,
+      default: undefined
+    },
+    currency: {
+      type: [String, Object],
+      default: undefined
+    },
+    distractionFree: {
+      type: [Boolean, Object],
+      default: undefined
+    },
+    precision: {
+      type: [Number, Object],
+      default: undefined
+    },
+    autoDecimalMode: {
+      type: Boolean,
+      default: undefined
+    },
+    valueAsInteger: {
+      type: Boolean,
+      default: undefined
+    },
+    valueRange: {
+      type: Object,
+      default: undefined
+    },
+    allowNegative: {
+      type: Boolean,
+      default: undefined
+    }
+  },
+  data: function data () {
+    return {
+      formattedValue: null
+    }
+  },
+  created: function created () {
+    var ref = createCurrencyFormat(this.options);
+    var minimumFractionDigits = ref.minimumFractionDigits;
+    var maximumFractionDigits = ref.maximumFractionDigits;
+    this.formattedValue = typeof this.value === 'number' ? this.value.toLocaleString(this.options.locale, { minimumFractionDigits: minimumFractionDigits, maximumFractionDigits: maximumFractionDigits }) : null;
+  },
+  computed: {
+    options: function options () {
+      var this$1 = this;
+      var options = Object.assign({}, this.$CI_DEFAULT_OPTIONS || DEFAULT_OPTIONS);
+      Object.keys(DEFAULT_OPTIONS).forEach(function (key) {
+        if (this$1[key] !== undefined) {
+          options[key] = this$1[key];
+        }
+      });
+      return options
+    }
+  },
+  watch: {
+    value: 'setValue'
+  },
+  methods: {
+    setValue: function setValue$1 (value) {
+      setValue(this.$el, value);
+    }
+  }
+};
+
+var plugin = {
+  install: function install (Vue, ref) {
+    if ( ref === void 0 ) ref = {};
+    var componentName = ref.componentName; if ( componentName === void 0 ) componentName = component.name;
+    var directiveName = ref.directiveName; if ( directiveName === void 0 ) directiveName = 'currency';
+    var globalOptions = ref.globalOptions; if ( globalOptions === void 0 ) globalOptions = {};
+    Vue.prototype.$CI_DEFAULT_OPTIONS = Object.assign({}, DEFAULT_OPTIONS, globalOptions);
+    Vue.component(componentName, component);
+    Vue.directive(directiveName, directive);
+    Vue.prototype.$parseCurrency = function (str, options) {
+      if ( options === void 0 ) options = {};
+      return parseCurrency(str, Object.assign({}, globalOptions, options));
+    };
+  }
+};
+
+if (typeof window !== 'undefined' && window.Vue) {
+  window.Vue.use(plugin);
+}
+
+/* harmony default export */ __webpack_exports__["default"] = (plugin);
+
+
+
+/***/ }),
+
 /***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/MainMenu.vue?vue&type=template&id=3e2a0554&scoped=true&":
 /*!************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/MainMenu.vue?vue&type=template&id=3e2a0554&scoped=true& ***!
@@ -3215,17 +3907,80 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _vm._m(0)
+  return _c("div", { staticClass: "columns" }, [
+    _c("div", { staticClass: "column is-6 is-offset-3" }, [
+      _c("form", { staticClass: "card" }, [
+        _c("div", { staticClass: "title" }, [_vm._v("Enter Transaction")]),
+        _vm._v(" "),
+        _vm._m(0),
+        _vm._v(" "),
+        _c("div", { staticClass: "field" }, [
+          _c("label", { staticClass: "label" }, [_vm._v("Amount Provided")]),
+          _vm._v(" "),
+          _c(
+            "div",
+            { staticClass: "control has-icons-left has-icons-right" },
+            [
+              _c("input", {
+                staticClass: "input is-success",
+                attrs: {
+                  type: "text",
+                  placeholder: "Text input",
+                  value: "bulma"
+                }
+              }),
+              _vm._v(" "),
+              _c("currency-input", {
+                model: {
+                  value: _vm.amount,
+                  callback: function($$v) {
+                    _vm.amount = $$v
+                  },
+                  expression: "amount"
+                }
+              })
+            ],
+            1
+          ),
+          _vm._v(" "),
+          _c("p", { staticClass: "help is-success" }, [
+            _vm._v("This username is available")
+          ])
+        ]),
+        _vm._v(" "),
+        _vm._m(1)
+      ])
+    ])
+  ])
 }
 var staticRenderFns = [
   function() {
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "columns" }, [
-      _c("div", { staticClass: "column" }, [
-        _c("h1", { staticClass: "is-size-1" }, [
-          _vm._v("\n            Cash Register\n        ")
+    return _c("div", { staticClass: "field" }, [
+      _c("label", { staticClass: "label" }, [_vm._v("Total Cost")]),
+      _vm._v(" "),
+      _c("div", { staticClass: "control" }, [
+        _c("input", {
+          staticClass: "input",
+          attrs: { type: "text", placeholder: "Text input" }
+        })
+      ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "field is-grouped" }, [
+      _c("div", { staticClass: "control" }, [
+        _c("button", { staticClass: "button is-link" }, [_vm._v("Submit")])
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "control" }, [
+        _c("button", { staticClass: "button is-link is-light" }, [
+          _vm._v("Cancel")
         ])
       ])
     ])
@@ -18467,7 +19222,9 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _Register_vue_vue_type_template_id_027133c1_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Register.vue?vue&type=template&id=027133c1&scoped=true& */ "./resources/js/Register.vue?vue&type=template&id=027133c1&scoped=true&");
 /* harmony import */ var _Register_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Register.vue?vue&type=script&lang=js& */ "./resources/js/Register.vue?vue&type=script&lang=js&");
-/* empty/unused harmony star reexport *//* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+/* empty/unused harmony star reexport *//* harmony import */ var _Register_vue_vue_type_style_index_0_id_027133c1_scoped_true_style_scss_lang_css___WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Register.vue?vue&type=style&index=0&id=027133c1&scoped=true&style=scss&lang=css& */ "./resources/js/Register.vue?vue&type=style&index=0&id=027133c1&scoped=true&style=scss&lang=css&");
+/* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+
 
 
 
@@ -18475,7 +19232,7 @@ __webpack_require__.r(__webpack_exports__);
 
 /* normalize component */
 
-var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
+var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_3__["default"])(
   _Register_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
   _Register_vue_vue_type_template_id_027133c1_scoped_true___WEBPACK_IMPORTED_MODULE_0__["render"],
   _Register_vue_vue_type_template_id_027133c1_scoped_true___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
@@ -18504,6 +19261,22 @@ component.options.__file = "resources/js/Register.vue"
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Register_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../node_modules/babel-loader/lib??ref--4-0!../../node_modules/vue-loader/lib??vue-loader-options!./Register.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/Register.vue?vue&type=script&lang=js&");
 /* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Register_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
+
+/***/ }),
+
+/***/ "./resources/js/Register.vue?vue&type=style&index=0&id=027133c1&scoped=true&style=scss&lang=css&":
+/*!*******************************************************************************************************!*\
+  !*** ./resources/js/Register.vue?vue&type=style&index=0&id=027133c1&scoped=true&style=scss&lang=css& ***!
+  \*******************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_style_loader_index_js_node_modules_css_loader_index_js_ref_6_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_node_modules_vue_loader_lib_index_js_vue_loader_options_Register_vue_vue_type_style_index_0_id_027133c1_scoped_true_style_scss_lang_css___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../node_modules/style-loader!../../node_modules/css-loader??ref--6-1!../../node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../node_modules/postcss-loader/src??ref--6-2!../../node_modules/vue-loader/lib??vue-loader-options!./Register.vue?vue&type=style&index=0&id=027133c1&scoped=true&style=scss&lang=css& */ "./node_modules/style-loader/index.js!./node_modules/css-loader/index.js?!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/Register.vue?vue&type=style&index=0&id=027133c1&scoped=true&style=scss&lang=css&");
+/* harmony import */ var _node_modules_style_loader_index_js_node_modules_css_loader_index_js_ref_6_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_node_modules_vue_loader_lib_index_js_vue_loader_options_Register_vue_vue_type_style_index_0_id_027133c1_scoped_true_style_scss_lang_css___WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_index_js_node_modules_css_loader_index_js_ref_6_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_node_modules_vue_loader_lib_index_js_vue_loader_options_Register_vue_vue_type_style_index_0_id_027133c1_scoped_true_style_scss_lang_css___WEBPACK_IMPORTED_MODULE_0__);
+/* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _node_modules_style_loader_index_js_node_modules_css_loader_index_js_ref_6_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_node_modules_vue_loader_lib_index_js_vue_loader_options_Register_vue_vue_type_style_index_0_id_027133c1_scoped_true_style_scss_lang_css___WEBPACK_IMPORTED_MODULE_0__) if(__WEBPACK_IMPORT_KEY__ !== 'default') (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _node_modules_style_loader_index_js_node_modules_css_loader_index_js_ref_6_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_node_modules_vue_loader_lib_index_js_vue_loader_options_Register_vue_vue_type_style_index_0_id_027133c1_scoped_true_style_scss_lang_css___WEBPACK_IMPORTED_MODULE_0__[key]; }) }(__WEBPACK_IMPORT_KEY__));
+ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_style_loader_index_js_node_modules_css_loader_index_js_ref_6_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_node_modules_vue_loader_lib_index_js_vue_loader_options_Register_vue_vue_type_style_index_0_id_027133c1_scoped_true_style_scss_lang_css___WEBPACK_IMPORTED_MODULE_0___default.a); 
 
 /***/ }),
 
@@ -18672,35 +19445,40 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var vue_router__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue-router */ "./node_modules/vue-router/dist/vue-router.esm.js");
-/* harmony import */ var _Register__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Register */ "./resources/js/Register.vue");
-/* harmony import */ var _Reports__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Reports */ "./resources/js/Reports.vue");
-/* harmony import */ var _Welcome__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./Welcome */ "./resources/js/Welcome.vue");
+/* harmony import */ var _bootstrap__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./bootstrap */ "./resources/js/bootstrap.js");
+/* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.common.js");
+/* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(vue__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var vue_router__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! vue-router */ "./node_modules/vue-router/dist/vue-router.esm.js");
+/* harmony import */ var vue_currency_input__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! vue-currency-input */ "./node_modules/vue-currency-input/dist/vue-currency-input.esm.js");
+/* harmony import */ var _Register__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./Register */ "./resources/js/Register.vue");
+/* harmony import */ var _Reports__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./Reports */ "./resources/js/Reports.vue");
+/* harmony import */ var _Welcome__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./Welcome */ "./resources/js/Welcome.vue");
 
 
 
 
 
-__webpack_require__(/*! ./bootstrap */ "./resources/js/bootstrap.js");
 
-window.Vue = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.common.js");
-Vue.use(vue_router__WEBPACK_IMPORTED_MODULE_0__["default"]);
-Vue.component('main-menu', __webpack_require__(/*! ./MainMenu.vue */ "./resources/js/MainMenu.vue")["default"]);
+
+window.Vue = vue__WEBPACK_IMPORTED_MODULE_1___default.a;
+vue__WEBPACK_IMPORTED_MODULE_1___default.a.use(vue_currency_input__WEBPACK_IMPORTED_MODULE_3__["default"]);
+vue__WEBPACK_IMPORTED_MODULE_1___default.a.use(vue_router__WEBPACK_IMPORTED_MODULE_2__["default"]);
+vue__WEBPACK_IMPORTED_MODULE_1___default.a.component('main-menu', __webpack_require__(/*! ./MainMenu.vue */ "./resources/js/MainMenu.vue")["default"]);
 var routes = [{
   path: '/',
-  component: _Welcome__WEBPACK_IMPORTED_MODULE_3__["default"]
+  component: _Welcome__WEBPACK_IMPORTED_MODULE_6__["default"]
 }, {
   path: '/register',
-  component: _Register__WEBPACK_IMPORTED_MODULE_1__["default"]
+  component: _Register__WEBPACK_IMPORTED_MODULE_4__["default"]
 }, {
   path: '/reports',
-  component: _Reports__WEBPACK_IMPORTED_MODULE_2__["default"]
+  component: _Reports__WEBPACK_IMPORTED_MODULE_5__["default"]
 }];
-var router = new vue_router__WEBPACK_IMPORTED_MODULE_0__["default"]({
+var router = new vue_router__WEBPACK_IMPORTED_MODULE_2__["default"]({
   mode: 'history',
   routes: routes
 });
-new Vue({
+new vue__WEBPACK_IMPORTED_MODULE_1___default.a({
   router: router
 }).$mount('#app');
 
