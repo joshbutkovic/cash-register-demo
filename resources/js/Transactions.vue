@@ -18,7 +18,7 @@
                         <td>$D</td>
                         <td>$N</td>
                         <td>$P</td>
-                        <td style="min-width: 128px;">Sold At</td>
+                        <td style="min-width: 100px;">Sold At</td>
                         <td></td>
                     </tr>
                 </thead>

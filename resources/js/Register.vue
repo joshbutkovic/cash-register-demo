@@ -34,11 +34,9 @@
             </div>
             <div v-else class="column is-6 is-offset-3 has-text-centered" key="2">
                 <div class="title">Return Change</div>
-                <p
-                    style="font-size: 2rem;"
-                    v-for="(item, index) in change"
-                    v-bind:key="index"
-                >{{ index }}: {{ item }}</p>
+                <p style="font-size: 2rem;" v-for="(item, index) in change" v-bind:key="index">
+                    {{ index }}: {{ Number(item).toLocaleString() }}
+                </p>
                 <div class="field another-sale">
                     <div class="control">
                         <button class="button is-link" @click="clearFields">Another Sale</button>
@@ -85,6 +83,7 @@ export default {
                 });
 
                 if (!res) throw new Error('transaction failed');
+                console.log(res);
                 this.change = res.data;
                 this.status = 'confirm';
                 this.isProvidedError = false;

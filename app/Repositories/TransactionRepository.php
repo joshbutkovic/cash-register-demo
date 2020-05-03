@@ -28,15 +28,15 @@ class TransactionRepository implements TransactionRepositoryInterface
         $transaction = new Transaction;
         $transaction->due = $request->due;
         $transaction->provided = $request->provided;
-        $transaction->hundreds = isset($changeObj->hundreds) ? $changeObj->hundreds : 0;
-        $transaction->fifties = isset($changeObj->fifties) ? $changeObj->fifties : 0;
-        $transaction->twenties = isset($changeObj->twenties) ? $changeObj->twenties : 0;
-        $transaction->fives = isset($changeObj->fives) ? $changeObj->fives : 0;
-        $transaction->ones = isset($changeObj->ones) ? $changeObj->ones : 0;
-        $transaction->quarters = isset($changeObj->quarters) ? $changeObj->quarters : 0;
-        $transaction->dimes = isset($changeObj->dimes) ? $changeObj->dimes : 0;
-        $transaction->nickels = isset($changeObj->nickels) ? $changeObj->nickels : 0;
-        $transaction->pennies = isset($changeObj->pennies) ? $changeObj->pennies : 0;
+        $transaction->hundreds = isset($changeObj->Hundreds) ? $changeObj->Hundreds : 0;
+        $transaction->fifties = isset($changeObj->Fifties) ? $changeObj->Fifties : 0;
+        $transaction->twenties = isset($changeObj->Twenties) ? $changeObj->Twenties : 0;
+        $transaction->fives = isset($changeObj->Fives) ? $changeObj->Fives : 0;
+        $transaction->ones = isset($changeObj->Ones) ? $changeObj->Ones : 0;
+        $transaction->quarters = isset($changeObj->Quarters) ? $changeObj->Quarters : 0;
+        $transaction->dimes = isset($changeObj->Dimes) ? $changeObj->Dimes : 0;
+        $transaction->nickels = isset($changeObj->Nickels) ? $changeObj->Nickels : 0;
+        $transaction->pennies = isset($changeObj->Pennies) ? $changeObj->Pennies : 0;
         $transaction->save();
 
         return $change;

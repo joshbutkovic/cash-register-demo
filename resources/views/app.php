@@ -10,13 +10,13 @@
     <body>
        <div id="app">
             <main-menu></main-menu>
-                <section class="section">
-                    <div class="container">
+            <section class="section">
+                <div class="container">
                     <transition name="fade" mode="out-in">
                         <router-view></router-view>
                     </transition>
-                    </div>
-                </section>
+                </div>
+            </section>
         </div>
         <script src="/js/app.js"></script>
     </body>

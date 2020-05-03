@@ -2,16 +2,7 @@
     <nav class="navbar" role="navigation" aria-label="main navigation">
         <div class="navbar-brand">
             <router-link class="navbar-item navbar-logo" to="/">Point of Sale</router-link>
-        </div>
-        <div id="main-menu" class="navbar-menu">
-            <div class="navbar-start ivcr-links">
-                <router-link
-                    v-for="item of navItems"
-                    v-bind:key="item.index"
-                    :class="'navbar-item is-hoverable ' + item.toLowerCase()"
-                    :to="'/' + item.toLowerCase()"
-                >{{ item }}</router-link>
-            </div>
+            <router-link class="navbar-item is-hoverable" to="/transactions">Transactions</router-link>
         </div>
     </nav>
 </template>
@@ -21,11 +12,6 @@ import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
 export default {
     name: 'MainMenu',
     components: { FontAwesomeIcon },
-    data() {
-        return {
-            navItems: ['Transactions'],
-        };
-    },
 };
 </script>
 
@@ -44,6 +30,12 @@ $menu-bg: #3273dc;
         &:hover {
             transition: none;
         }
+    }
+    .navbar-menu {
+        display: block !important;
+        flex-grow: 1 !important;
+        flex-shrink: 0 !important;
+        align-items: stretch !important;
     }
     a.navbar-item {
         color: #ededed;

@@ -4950,25 +4950,11 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
-//
-//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: 'MainMenu',
   components: {
     FontAwesomeIcon: _fortawesome_vue_fontawesome__WEBPACK_IMPORTED_MODULE_0__["FontAwesomeIcon"]
-  },
-  data: function data() {
-    return {
-      navItems: ['Transactions']
-    };
   }
 });
 
@@ -4992,8 +4978,6 @@ function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) { try
 
 function _asyncToGenerator(fn) { return function () { var self = this, args = arguments; return new Promise(function (resolve, reject) { var gen = fn.apply(self, args); function _next(value) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value); } function _throw(err) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err); } _next(undefined); }); }; }
 
-//
-//
 //
 //
 //
@@ -5107,24 +5091,25 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
                 throw new Error('transaction failed');
 
               case 13:
+                console.log(res);
                 _this.change = res.data;
                 _this.status = 'confirm';
                 _this.isProvidedError = false;
-                _context.next = 22;
+                _context.next = 23;
                 break;
 
-              case 18:
-                _context.prev = 18;
+              case 19:
+                _context.prev = 19;
                 _context.t0 = _context["catch"](7);
                 console.log('error');
                 throw new Error("transaction failed: ".concat(_context.t0));
 
-              case 22:
+              case 23:
               case "end":
                 return _context.stop();
             }
           }
-        }, _callee, null, [[7, 18]]);
+        }, _callee, null, [[7, 19]]);
       }))();
     },
     clearFields: function clearFields(e) {
@@ -5325,7 +5310,7 @@ exports = module.exports = __webpack_require__(/*! ../../node_modules/css-loader
 
 
 // module
-exports.push([module.i, ".navbar[data-v-3e2a0554] {\n  background-color: #3273dc;\n  min-height: 3.4rem;\n  box-shadow: 0 3px 7px rgba(0, 0, 0, 0.25), 0 3px 3px rgba(0, 0, 0, 0.22);\n}\n.navbar .navbar-brand a.navbar-item.navbar-logo[data-v-3e2a0554] {\n  font-size: 1.4rem;\n  background: #3273dc;\n}\n.navbar .navbar-brand a.navbar-item.navbar-logo[data-v-3e2a0554]:hover {\n  transition: none;\n}\n.navbar a.navbar-item[data-v-3e2a0554] {\n  color: #ededed;\n  transition: all 250ms ease-in-out;\n  font-size: 14px;\n  font-weight: bold;\n  padding: 0 18px;\n  margin: 0 4px;\n  align-items: center;\n}\n.navbar a.navbar-item[data-v-3e2a0554]:hover:not(.navbar-logo), .navbar a.navbar-item[data-v-3e2a0554]:hover:not(.navbar-logo), .navbar a.navbar-item[data-v-3e2a0554]:active:not(.navbar-logo), .navbar a.navbar-item.is-active[data-v-3e2a0554]:not(.navbar-logo) {\n  background-color: #3273dc;\n  color: #fff;\n}\n.navbar a.navbar-item[data-v-3e2a0554]:focus, .navbar a.navbar-item[data-v-3e2a0554]:focus-within {\n  background-color: #3273dc;\n  transition: none;\n}\n.navbar a.navbar-item.is-hoverable[data-v-3e2a0554] {\n  text-transform: uppercase;\n}\n.navbar .navbar-end[data-v-3e2a0554] {\n  align-items: center;\n}\n.navbar .svg-inline--fa.fa-w-16[data-v-3e2a0554] {\n  font-size: 1.125rem;\n}", ""]);
+exports.push([module.i, ".navbar[data-v-3e2a0554] {\n  background-color: #3273dc;\n  min-height: 3.4rem;\n  box-shadow: 0 3px 7px rgba(0, 0, 0, 0.25), 0 3px 3px rgba(0, 0, 0, 0.22);\n}\n.navbar .navbar-brand a.navbar-item.navbar-logo[data-v-3e2a0554] {\n  font-size: 1.4rem;\n  background: #3273dc;\n}\n.navbar .navbar-brand a.navbar-item.navbar-logo[data-v-3e2a0554]:hover {\n  transition: none;\n}\n.navbar .navbar-menu[data-v-3e2a0554] {\n  display: block !important;\n  flex-grow: 1 !important;\n  flex-shrink: 0 !important;\n  align-items: stretch !important;\n}\n.navbar a.navbar-item[data-v-3e2a0554] {\n  color: #ededed;\n  transition: all 250ms ease-in-out;\n  font-size: 14px;\n  font-weight: bold;\n  padding: 0 18px;\n  margin: 0 4px;\n  align-items: center;\n}\n.navbar a.navbar-item[data-v-3e2a0554]:hover:not(.navbar-logo), .navbar a.navbar-item[data-v-3e2a0554]:hover:not(.navbar-logo), .navbar a.navbar-item[data-v-3e2a0554]:active:not(.navbar-logo), .navbar a.navbar-item.is-active[data-v-3e2a0554]:not(.navbar-logo) {\n  background-color: #3273dc;\n  color: #fff;\n}\n.navbar a.navbar-item[data-v-3e2a0554]:focus, .navbar a.navbar-item[data-v-3e2a0554]:focus-within {\n  background-color: #3273dc;\n  transition: none;\n}\n.navbar a.navbar-item.is-hoverable[data-v-3e2a0554] {\n  text-transform: uppercase;\n}\n.navbar .navbar-end[data-v-3e2a0554] {\n  align-items: center;\n}\n.navbar .svg-inline--fa.fa-w-16[data-v-3e2a0554] {\n  font-size: 1.125rem;\n}", ""]);
 
 // exports
 
@@ -7930,29 +7915,19 @@ var render = function() {
             "router-link",
             { staticClass: "navbar-item navbar-logo", attrs: { to: "/" } },
             [_vm._v("Point of Sale")]
+          ),
+          _vm._v(" "),
+          _c(
+            "router-link",
+            {
+              staticClass: "navbar-item is-hoverable",
+              attrs: { to: "/transactions" }
+            },
+            [_vm._v("Transactions")]
           )
         ],
         1
-      ),
-      _vm._v(" "),
-      _c("div", { staticClass: "navbar-menu", attrs: { id: "main-menu" } }, [
-        _c(
-          "div",
-          { staticClass: "navbar-start ivcr-links" },
-          _vm._l(_vm.navItems, function(item) {
-            return _c(
-              "router-link",
-              {
-                key: item.index,
-                class: "navbar-item is-hoverable " + item.toLowerCase(),
-                attrs: { to: "/" + item.toLowerCase() }
-              },
-              [_vm._v(_vm._s(item))]
-            )
-          }),
-          1
-        )
-      ])
+      )
     ]
   )
 }
@@ -8083,7 +8058,15 @@ var render = function() {
                   return _c(
                     "p",
                     { key: index, staticStyle: { "font-size": "2rem" } },
-                    [_vm._v(_vm._s(index) + ": " + _vm._s(item))]
+                    [
+                      _vm._v(
+                        "\n                " +
+                          _vm._s(index) +
+                          ": " +
+                          _vm._s(Number(item).toLocaleString()) +
+                          "\n            "
+                      )
+                    ]
                   )
                 }),
                 _vm._v(" "),
@@ -8237,7 +8220,7 @@ var staticRenderFns = [
         _vm._v(" "),
         _c("td", [_vm._v("$P")]),
         _vm._v(" "),
-        _c("td", { staticStyle: { "min-width": "128px" } }, [
+        _c("td", { staticStyle: { "min-width": "100px" } }, [
           _vm._v("Sold At")
         ]),
         _vm._v(" "),
