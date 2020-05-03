@@ -10,8 +10,7 @@
                     v-bind:key="item.index"
                     :class="'navbar-item is-hoverable ' + item.toLowerCase()"
                     :to="'/' + item.toLowerCase()"
-                    >{{ item }}</router-link
-                >
+                >{{ item }}</router-link>
             </div>
         </div>
     </nav>
@@ -24,7 +23,7 @@ export default {
     components: { FontAwesomeIcon },
     data() {
         return {
-            navItems: ['Register', 'View Transactions'],
+            navItems: ['Transactions'],
         };
     },
 };
@@ -55,35 +54,21 @@ $menu-bg: #3273dc;
         padding: 0 18px;
         margin: 0 4px;
         align-items: center;
-        &:after {
-            content: '';
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            width: 90%;
-            height: 3px;
-            transform: scaleX(0);
-            background-color: #eef3fc;
-            transition: transform 200ms;
-            top: 44px;
-            margin: 0 auto;
-        }
         &:hover:not(.navbar-logo),
         &:hover:not(.navbar-logo),
         &:active:not(.navbar-logo),
         &.is-active:not(.navbar-logo) {
             background-color: $menu-bg;
             color: $white;
-            &:after {
-                transform: scaleX(1);
-            }
         }
         &:focus,
         &:focus-within {
             background-color: $menu-bg;
             transition: none;
         }
+    }
+    a.navbar-item.is-hoverable {
+        text-transform: uppercase;
     }
     .navbar-end {
         align-items: center;

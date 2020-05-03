@@ -2,9 +2,9 @@ import './bootstrap';
 import Vue from 'vue';
 import VueRouter from 'vue-router';
 import VueCurrencyInput from 'vue-currency-input';
+import Vue2Filters from 'vue2-filters';
 import Register from './Register';
-import Reports from './Reports';
-import Welcome from './Welcome';
+import Transactions from './Transactions';
 
 window.Vue = Vue;
 
@@ -14,12 +14,12 @@ const pluginOptions = {
 
 Vue.use(VueCurrencyInput, pluginOptions);
 Vue.use(VueRouter);
+Vue.use(Vue2Filters);
 Vue.component('main-menu', require('./MainMenu.vue').default);
 
 const routes = [
-    { path: '/', component: Welcome },
-    { path: '/register', component: Register },
-    { path: '/reports', component: Reports },
+    { path: '/', component: Register },
+    { path: '/transactions', component: Transactions },
 ];
 
 const router = new VueRouter({
