@@ -1,51 +1,62 @@
 <template>
-    <div class="columns is-vcentered">
-        <div class="column is-6 is-offset-3">
-            <form @submit="createTransaction">
-                <div class="title">Enter Transaction</div>
-                <div class="field">
-                    <label class="label">Amount Due ($USD)</label>
-                    <div class="control has-icons-left has-icons-right">
-                        <currency-input v-model="due" class="currency" />
+    <div class="columns is-vcentered has-text-centered">
+        <transition name="fade" mode="out-in">
+            <div v-if="status === 'start'" class="column is-6 is-offset-3" key="1">
+                <form @submit="createTransaction">
+                    <div class="title">Start Sale</div>
+                    <div class="field">
+                        <label class="label">Amount Due ($USD)</label>
+                        <div class="control has-icons-left has-icons-right">
+                            <currency-input v-model="due" class="currency" />
+                        </div>
                     </div>
-                </div>
 
-                <div class="field">
-                    <label class="label">Amount Provided ($USD)</label>
-                    <div class="control has-icons-left has-icons-right">
-                        <currency-input v-model="provided" class="currency" />
+                    <div class="field">
+                        <label class="label">Amount Provided ($USD)</label>
+                        <div class="control has-icons-left has-icons-right">
+                            <currency-input v-model="provided" class="currency" />
+                        </div>
                     </div>
-                </div>
 
-                <div class="field is-grouped">
-                    <div class="control">
-                        <button class="button is-link">Enter Sale</button>
+                    <div class="field is-grouped">
+                        <div class="control">
+                            <button class="button is-link">Enter Sale</button>
+                        </div>
+                        <div class="control">
+                            <button @click="clearFields" class="button is-link is-light">Clear</button>
+                        </div>
                     </div>
+                </form>
+            </div>
+            <div v-else class="column is-6 is-offset-3 has-text-centered" key="2">
+                <h4 class="is-size-3">Return the change, sale complete</h4>
+                <p
+                    style="font-size: 2rem;"
+                    v-for="(item, index) in change"
+                    v-bind:key="index"
+                >{{ index }}: {{ item }}</p>
+                <div class="field another-sale">
                     <div class="control">
-                        <button @click="clearFields" class="button is-link is-light">Clear</button>
+                        <button class="button is-link" @click="clearFields">Another Sale</button>
                     </div>
                 </div>
-            </form>
-        </div>
-        <div class="column">
-            <p
-                class="change"
-                v-for="(item, index) in change"
-                v-bind:key="index"
-            >{{ index }}: {{ item }}</p>
-        </div>
+            </div>
+        </transition>
     </div>
 </template>
 
 <script>
+import Confirmation from './Confirmation';
 export default {
     name: 'Register',
+    components: { Confirmation },
     data() {
         return {
             msg: 'hello',
-            due: 100.0,
-            provided: 200.0,
+            due: null,
+            provided: null,
             change: {},
+            status: 'start',
         };
     },
     methods: {
@@ -59,14 +70,16 @@ export default {
 
                 if (!res) throw new Error('transaction failed');
                 this.change = res.data;
+                this.status = 'confirm';
             } catch (error) {
+                console.log('error');
                 throw new Error(`transaction failed: ${error}`);
             }
         },
         clearFields() {
             this.due = 0.0;
             this.provided = 0.0;
-            change = {};
+            this.status = 'start';
         },
     },
 };
@@ -79,13 +92,19 @@ form {
     align-items: center;
     padding: 0 1.5rem;
     .currency,
-    .change {
-        font-size: 1rem;
+    p.change.results {
+        font-size: 1rem !important;
+        font-weight: 200;
         padding: 0.5rem;
         outline: none;
     }
     .field.is-grouped {
         margin-top: 1rem;
     }
+}
+div.field.another-sale {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
 }
 </style>

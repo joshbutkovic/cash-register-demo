@@ -4,7 +4,7 @@
             <router-link class="navbar-item navbar-logo" to="/">Point of Sale</router-link>
         </div>
         <div id="main-menu" class="navbar-menu">
-            <div class="navbar-end ivcr-links">
+            <div class="navbar-start ivcr-links">
                 <router-link
                     v-for="item of navItems"
                     v-bind:key="item.index"
@@ -24,24 +24,24 @@ export default {
     components: { FontAwesomeIcon },
     data() {
         return {
-            navItems: ['Register', 'Reports'],
+            navItems: ['Register', 'View Transactions'],
         };
     },
 };
 </script>
 
 <style scoped lang="scss">
-$menu-bg: #141414;
-$primary: green;
 $white: #fff;
 $black: #000;
+$menu-bg: #3273dc;
 
 .navbar {
     background-color: $menu-bg;
     min-height: 3.4rem;
+    box-shadow: 0 3px 7px rgba(0, 0, 0, 0.25), 0 3px 3px rgba(0, 0, 0, 0.22);
     .navbar-brand a.navbar-item.navbar-logo {
         font-size: 1.4rem;
-        background: #141414;
+        background: $menu-bg;
         &:hover {
             transition: none;
         }
@@ -50,7 +50,8 @@ $black: #000;
         color: #ededed;
         -webkit-transition: all 5ms ease-in-out;
         transition: all 250ms ease-in-out;
-        font-size: 15px;
+        font-size: 14px;
+        font-weight: bold;
         padding: 0 18px;
         margin: 0 4px;
         align-items: center;
@@ -60,12 +61,13 @@ $black: #000;
             bottom: 0;
             left: 0;
             right: 0;
-            width: 100%;
-            height: 4px;
+            width: 90%;
+            height: 3px;
             transform: scaleX(0);
-            background-color: $primary;
+            background-color: #eef3fc;
             transition: transform 200ms;
-            top: 34px;
+            top: 44px;
+            margin: 0 auto;
         }
         &:hover:not(.navbar-logo),
         &:hover:not(.navbar-logo),

@@ -12,7 +12,7 @@
             <main-menu></main-menu>
                 <section class="section">
                     <div class="container">
-                    <transition name="router-fade" mode="out-in">
+                    <transition name="fade" mode="out-in">
                         <router-view></router-view>
                     </transition>
                     </div>
