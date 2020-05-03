@@ -5027,6 +5027,8 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
 //
 //
 //
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: 'Register',
@@ -5091,25 +5093,24 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
                 throw new Error('transaction failed');
 
               case 13:
-                console.log(res);
                 _this.change = res.data;
                 _this.status = 'confirm';
                 _this.isProvidedError = false;
-                _context.next = 23;
+                _context.next = 22;
                 break;
 
-              case 19:
-                _context.prev = 19;
+              case 18:
+                _context.prev = 18;
                 _context.t0 = _context["catch"](7);
                 console.log('error');
                 throw new Error("transaction failed: ".concat(_context.t0));
 
-              case 23:
+              case 22:
               case "end":
                 return _context.stop();
             }
           }
-        }, _callee, null, [[7, 19]]);
+        }, _callee, null, [[7, 18]]);
       }))();
     },
     clearFields: function clearFields(e) {
@@ -8060,11 +8061,9 @@ var render = function() {
                     { key: index, staticStyle: { "font-size": "2rem" } },
                     [
                       _vm._v(
-                        "\n                " +
-                          _vm._s(index) +
+                        _vm._s(index) +
                           ": " +
-                          _vm._s(Number(item).toLocaleString()) +
-                          "\n            "
+                          _vm._s(Number(item).toLocaleString())
                       )
                     ]
                   )

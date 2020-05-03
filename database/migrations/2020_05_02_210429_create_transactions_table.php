@@ -20,6 +20,7 @@ class CreateTransactionsTable extends Migration
             $table->integer('hundreds')->nullable();
             $table->integer('fifties')->nullable();
             $table->integer('twenties')->nullable();
+            $table->integer('tens')->nullable();
             $table->integer('fives')->nullable();
             $table->integer('ones')->nullable();
             $table->integer('quarters')->nullable();
