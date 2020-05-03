@@ -1,7 +1,7 @@
 <template>
     <nav class="navbar" role="navigation" aria-label="main navigation">
         <div class="navbar-brand">
-            <router-link class="navbar-item navbar-logo" to="/">I-View Now Cash Register</router-link>
+            <router-link class="navbar-item navbar-logo" to="/">Point of Sale</router-link>
         </div>
         <div id="main-menu" class="navbar-menu">
             <div class="navbar-end ivcr-links">
@@ -18,10 +18,10 @@
 </template>
 
 <script>
-// import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
+import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
 export default {
     name: 'MainMenu',
-    // components: { FontAwesomeIcon },
+    components: { FontAwesomeIcon },
     data() {
         return {
             navItems: ['Register', 'Reports'],

@@ -28,7 +28,11 @@
             </form>
         </div>
         <div class="column">
-            <p class="change" v-for="(item, index) in change" v-bind:key="index">{{ index }}: {{ item }}</p>
+            <p
+                class="change"
+                v-for="(item, index) in change"
+                v-bind:key="index"
+            >{{ index }}: {{ item }}</p>
         </div>
     </div>
 </template>
@@ -78,6 +82,7 @@ form {
     .change {
         font-size: 1rem;
         padding: 0.5rem;
+        outline: none;
     }
     .field.is-grouped {
         margin-top: 1rem;

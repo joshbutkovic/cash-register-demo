@@ -3,4 +3,4 @@
 use Illuminate\Support\Facades\Route;
 
 Route::get('/{any?}', 'VueController@index');
-Route::post('/transaction', 'TransactionController@create');
+Route::post('/transaction', 'TransactionController@store');

@@ -1920,6 +1920,7 @@ module.exports = {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+!(function webpackMissingModule() { var e = new Error("Cannot find module '@fortawesome/vue-fontawesome'"); e.code = 'MODULE_NOT_FOUND'; throw e; }());
 //
 //
 //
@@ -1939,10 +1940,12 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-// import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
+
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: 'MainMenu',
-  // components: { FontAwesomeIcon },
+  components: {
+    FontAwesomeIcon: !(function webpackMissingModule() { var e = new Error("Cannot find module '@fortawesome/vue-fontawesome'"); e.code = 'MODULE_NOT_FOUND'; throw e; }())
+  },
   data: function data() {
     return {
       navItems: ['Register', 'Reports']
@@ -1969,6 +1972,10 @@ function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) { try
 
 function _asyncToGenerator(fn) { return function () { var self = this, args = arguments; return new Promise(function (resolve, reject) { var gen = fn.apply(self, args); function _next(value) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value); } function _throw(err) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err); } _next(undefined); }); }; }
 
+//
+//
+//
+//
 //
 //
 //
@@ -2155,7 +2162,7 @@ exports = module.exports = __webpack_require__(/*! ../../node_modules/css-loader
 
 
 // module
-exports.push([module.i, "form[data-v-027133c1] {\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  padding: 0 1.5rem;\n}\nform .currency[data-v-027133c1],\nform .change[data-v-027133c1] {\n  font-size: 1rem;\n  padding: 0.5rem;\n}\nform .field.is-grouped[data-v-027133c1] {\n  margin-top: 1rem;\n}", ""]);
+exports.push([module.i, "form[data-v-027133c1] {\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  padding: 0 1.5rem;\n}\nform .currency[data-v-027133c1],\nform .change[data-v-027133c1] {\n  font-size: 1rem;\n  padding: 0.5rem;\n  outline: none;\n}\nform .field.is-grouped[data-v-027133c1] {\n  margin-top: 1rem;\n}", ""]);
 
 // exports
 
@@ -4667,7 +4674,7 @@ var render = function() {
           _c(
             "router-link",
             { staticClass: "navbar-item navbar-logo", attrs: { to: "/" } },
-            [_vm._v("I-View Now Cash Register")]
+            [_vm._v("Point of Sale")]
           )
         ],
         1

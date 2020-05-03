@@ -13,7 +13,7 @@ class TransactionController extends Controller
         return response()->json($transactions);
     }
 
-    public function create(Request $request)
+    public function store(Request $request)
     {
         $amountDue = $request->provided - $request->due;
 
@@ -24,10 +24,9 @@ class TransactionController extends Controller
         }
 
         $change = $this->getChange(abs($amountDue));
-
+        // converting to obj to pluck properties below
         $changeObj = (object) $change;
 
-        // Insert Record
         $transaction = new Transaction;
         $transaction->due = $request->due;
         $transaction->provided = $request->provided;
@@ -82,17 +81,6 @@ class TransactionController extends Controller
         }
 
         return $returnArr;
-    }
-
-    /**
-     * Store a newly created resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\Response
-     */
-    public function store(Request $request)
-    {
-        //
     }
 
     /**

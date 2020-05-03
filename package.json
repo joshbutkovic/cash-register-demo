@@ -10,10 +10,15 @@
         "production": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --no-progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js"
     },
     "dependencies": {
+        "@fortawesome/fontawesome-svg-core": "^1.2.28",
+        "@fortawesome/free-regular-svg-icons": "^5.13.0",
+        "@fortawesome/free-solid-svg-icons": "^5.13.0",
+        "@fortawesome/vue-fontawesome": "^0.1.9",
         "axios": "^0.19",
         "bulma": "^0.8.2",
         "vue": "^2.5.17",
         "vue-currency-input": "^1.18.3",
+        "vue-fontawesome": "0.0.2",
         "vue-router": "^3.1.6"
     },
     "devDependencies": {
