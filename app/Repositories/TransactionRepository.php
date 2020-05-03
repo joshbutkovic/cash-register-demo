@@ -81,9 +81,9 @@ class TransactionRepository implements TransactionRepositoryInterface
         return $returnArr;
     }
 
-    // public function deleteAll($transaction_id)
-    // {
-    //     Transaction::destroy($transaction_id)
-    // }
+    public function delete($id)
+    {
+        Transaction::destroy($id);
+    }
 
 }

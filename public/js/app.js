@@ -5201,8 +5201,10 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
 //
 //
 //
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
-  name: 'Welcome',
+  name: 'Transactions',
   data: function data() {
     return {
       transactions: []
@@ -5257,6 +5259,54 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
     filterDate: function filterDate(date) {
       var inDate = new Date(date);
       return inDate.toLocaleTimeString('en-US');
+    },
+    deleteTransaction: function deleteTransaction(id) {
+      var _this2 = this;
+
+      return _asyncToGenerator( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee2() {
+        var res;
+        return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.wrap(function _callee2$(_context2) {
+          while (1) {
+            switch (_context2.prev = _context2.next) {
+              case 0:
+                if (!confirm("Permanently Delete Transaction ".concat(id, " ?"))) {
+                  _context2.next = 14;
+                  break;
+                }
+
+                _context2.prev = 1;
+                _context2.next = 4;
+                return axios["delete"]("/transaction/delete/".concat(id));
+
+              case 4:
+                res = _context2.sent;
+
+                if (res) {
+                  _context2.next = 7;
+                  break;
+                }
+
+                throw new Error('no transaction data');
+
+              case 7:
+                _this2.getTransactions();
+
+                _context2.next = 14;
+                break;
+
+              case 10:
+                _context2.prev = 10;
+                _context2.t0 = _context2["catch"](1);
+                console.log('error');
+                throw new Error("transaction data retrieval failed: ".concat(_context2.t0));
+
+              case 14:
+              case "end":
+                return _context2.stop();
+            }
+          }
+        }, _callee2, null, [[1, 10]]);
+      }))();
     }
   }
 });
@@ -8129,7 +8179,22 @@ var render = function() {
                 _vm._v(" "),
                 _c("td", [_vm._v(_vm._s(item.pennies ? item.pennies : 0))]),
                 _vm._v(" "),
-                _c("td", [_vm._v(_vm._s(_vm.filterDate(item.created_at)))])
+                _c("td", [_vm._v(_vm._s(_vm.filterDate(item.created_at)))]),
+                _vm._v(" "),
+                _c("td", [
+                  _c(
+                    "a",
+                    {
+                      staticClass: "is-link is-small",
+                      on: {
+                        click: function($event) {
+                          return _vm.deleteTransaction(item.id)
+                        }
+                      }
+                    },
+                    [_vm._v("Delete")]
+                  )
+                ])
               ])
             }),
             0
@@ -8172,7 +8237,11 @@ var staticRenderFns = [
         _vm._v(" "),
         _c("td", [_vm._v("$P")]),
         _vm._v(" "),
-        _c("td", { staticStyle: { "min-width": "128px" } }, [_vm._v("Sold At")])
+        _c("td", { staticStyle: { "min-width": "128px" } }, [
+          _vm._v("Sold At")
+        ]),
+        _vm._v(" "),
+        _c("td")
       ])
     ])
   }
@@ -24476,6 +24545,7 @@ var router = new vue_router__WEBPACK_IMPORTED_MODULE_2__["default"]({
 new vue__WEBPACK_IMPORTED_MODULE_1___default.a({
   router: router
 }).$mount('#app');
+vue__WEBPACK_IMPORTED_MODULE_1___default.a.config.devtools = false;
 
 /***/ }),
 

@@ -19,6 +19,7 @@
                         <td>$N</td>
                         <td>$P</td>
                         <td style="min-width: 128px;">Sold At</td>
+                        <td></td>
                     </tr>
                 </thead>
                 <tbody>
@@ -37,6 +38,7 @@
                         <td>{{ item.nickles ? item.nickles : 0 }}</td>
                         <td>{{ item.pennies ? item.pennies : 0 }}</td>
                         <td>{{ filterDate(item.created_at) }}</td>
+                        <td><a class="is-link is-small" @click="deleteTransaction(item.id)">Delete</a></td>
                     </tr>
                 </tbody>
             </table>
@@ -46,7 +48,7 @@
 
 <script>
 export default {
-    name: 'Welcome',
+    name: 'Transactions',
     data() {
         return {
             transactions: [],
@@ -70,6 +72,19 @@ export default {
         filterDate(date) {
             let inDate = new Date(date);
             return inDate.toLocaleTimeString('en-US');
+        },
+        async deleteTransaction(id) {
+            if (confirm(`Permanently Delete Transaction ${id} ?`)) {
+                try {
+                    const res = await axios.delete(`/transaction/delete/${id}`);
+
+                    if (!res) throw new Error('no transaction data');
+                    this.getTransactions();
+                } catch (error) {
+                    console.log('error');
+                    throw new Error(`transaction data retrieval failed: ${error}`);
+                }
+            }
         },
     },
 };

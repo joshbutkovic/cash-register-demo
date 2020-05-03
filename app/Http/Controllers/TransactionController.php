@@ -25,4 +25,10 @@ class TransactionController extends Controller
         $change = $this->transactionRepository->create($request);
         return response()->json($change);
     }
+
+    public function delete($id)
+    {
+        $res = $this->transactionRepository->delete($id);
+        return response()->json($res);
+    }
 }
