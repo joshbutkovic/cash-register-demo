@@ -31,6 +31,7 @@ class TransactionRepository implements TransactionRepositoryInterface
         $transaction->hundreds = isset($changeObj->Hundreds) ? $changeObj->Hundreds : 0;
         $transaction->fifties = isset($changeObj->Fifties) ? $changeObj->Fifties : 0;
         $transaction->twenties = isset($changeObj->Twenties) ? $changeObj->Twenties : 0;
+        $transaction->tens = isset($changeObj->Tens) ? $changeObj->Tens : 0;
         $transaction->fives = isset($changeObj->Fives) ? $changeObj->Fives : 0;
         $transaction->ones = isset($changeObj->Ones) ? $changeObj->Ones : 0;
         $transaction->quarters = isset($changeObj->Quarters) ? $changeObj->Quarters : 0;
@@ -48,6 +49,7 @@ class TransactionRepository implements TransactionRepositoryInterface
             array("number" => 100, "name" => "Hundreds"),
             array("number" => 50, "name" => "Fifties"),
             array("number" => 20, "name" => "Twenties"),
+            array("number" => 10, "name" => "Tens"),
             array("number" => 5, "name" => "Fives"),
             array("number" => 1, "name" => "Ones"),
             array("number" => 0.25, "name" => "Quarters"),
