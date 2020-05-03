@@ -1,32 +1,34 @@
-/**
- * First we will load all of this project's JavaScript dependencies which
- * includes Vue and other libraries. It is a great starting point when
- * building robust, powerful web applications using Vue and Laravel.
- */
+import './bootstrap';
+import Vue from 'vue';
+import VueRouter from 'vue-router';
+import VueCurrencyInput from 'vue-currency-input';
+import Vue2Filters from 'vue2-filters';
+import Register from './Register';
+import Transactions from './Transactions';
 
-require('./bootstrap');
+window.Vue = Vue;
 
-window.Vue = require('vue');
+const pluginOptions = {
+    globalOptions: { currency: 'USD' },
+};
 
-/**
- * The following block of code may be used to automatically register your
- * Vue components. It will recursively scan this directory for the Vue
- * components and automatically register them with their "basename".
- *
- * Eg. ./components/ExampleComponent.vue -> <example-component></example-component>
- */
+Vue.use(VueCurrencyInput, pluginOptions);
+Vue.use(VueRouter);
+Vue.use(Vue2Filters);
+Vue.component('main-menu', require('./MainMenu.vue').default);
 
-// const files = require.context('./', true, /\.vue$/i)
-// files.keys().map(key => Vue.component(key.split('/').pop().split('.')[0], files(key).default))
+const routes = [
+    { path: '/', component: Register },
+    { path: '/transactions', component: Transactions },
+];
 
-Vue.component('example-component', require('./components/ExampleComponent.vue').default);
-
-/**
- * Next, we will create a fresh Vue application instance and attach it to
- * the page. Then, you may begin adding components to this application
- * or customize the JavaScript scaffolding to fit your unique needs.
- */
-
-const app = new Vue({
-    el: '#app',
+const router = new VueRouter({
+    mode: 'history',
+    routes,
 });
+
+new Vue({
+    router,
+}).$mount('#app');
+
+Vue.config.devtools = false;

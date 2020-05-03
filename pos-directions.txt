@@ -1,0 +1,10 @@
+To run project locally:
+
+1) Unzip filesize 
+2) Make sure you have composer installed and available in your path
+3) Open 2 terminal windows or tabs and navigate to the project root
+4) In terminal A run `php artisan serve` to start the backend
+5) In terminal B run `npm run watch` to start the frontend
+6) Open a browser and go to localhost:8000 and you should see the app running
+7) If you are downloading from github please make sure to run npm install and composer install at the project root and follow step 8
+8) (Github only if you are using the zip file then ignore) Add a sqllite database file by running the following command `touch database/database.sqlite` to create the db, follow steps 4 and 5 if you haven't already
