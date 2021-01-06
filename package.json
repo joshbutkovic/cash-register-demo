@@ -14,7 +14,7 @@
         "@fortawesome/free-regular-svg-icons": "^5.13.0",
         "@fortawesome/free-solid-svg-icons": "^5.13.0",
         "@fortawesome/vue-fontawesome": "^0.1.9",
-        "axios": "^0.19",
+        "axios": "^0.21",
         "bulma": "^0.8.2",
         "vue": "^2.5.17",
         "vue-currency-input": "^1.18.3",
